@@ -11,7 +11,7 @@ websocket.on("connection", function(client) {
   client.on("message", function(message) {
      websocket.clients.forEach(function each(click) {
          if (click !== websocket) {
-			client.send(message);
+			client.send(message)
          }
       })
    })
